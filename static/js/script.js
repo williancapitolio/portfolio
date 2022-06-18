@@ -2,12 +2,10 @@
 
 var nav = document.querySelector('nav');
 
-window.addEventListener('scroll', function () {
-    if (this.window.pageYOffset > 56) {
-        nav.classList.add('bg-dark', 'shadow');
-    } else {
-        nav.classList.remove('bg-dark', 'shadow');
-    }
+window.addEventListener('scroll', () => {
+    this.window.pageYOffset > 56
+        ? nav.classList.add('bg-dark', 'shadow')
+        : nav.classList.remove('bg-dark', 'shadow');
 });
 
 //////////////////////////////////////////////////
@@ -39,7 +37,7 @@ document.querySelectorAll(".navLink").forEach(n => n.addEventListener("click", (
     hamburgerMenu.classList.add("bi-list");
     navMenu.classList.remove("active");
     body.classList.remove("menuNavActive");
-    this.window.pageYOffset > 56
+    this.window.pageYOffset > 0
         ? nav.classList.add('bg-dark', 'shadow')
         : nav.classList.remove('bg-dark', 'shadow');
 }));
