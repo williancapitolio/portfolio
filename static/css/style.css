@@ -28,33 +28,57 @@ body {
     text-shadow: 4px 4px 10px var(--colorDarkOne);
 }
 
-.header .navbar .navbar-nav {
+.navMenu{
     flex-direction: row;
 }
 
-.header .navbar .nav-link {
+.navLink {
     margin-left: 3em;
     text-shadow: 4px 4px 10px var(--colorDarkOne);
 }
 
-.hamburgerMenu  {
+.hamburgerMenu {
     display: none;
+    cursor: pointer;
+    color: var(--fontColorOne);
+    font-size: 1.5em;
+    background-color: var(--colorDarkOne);
+    border-radius: 10%;
+}
+
+.menuNavActive {
+    overflow: hidden;
 }
 
 @media (max-width: 768px) {
-    .hamburgerMenu  {
+    .hamburgerMenu {
         display: flex;
-        color: var(--fontColorOne);
-        font-size: 1.5em;
-        background-color: var(--colorDarkOne);
-        border-radius: 10%;
     }
 
-    .header .navbar .navbar-nav {
+    .navMenu {
+        position: fixed;
+        left: -100%;
+        top: 56px;
+        gap: 0;
         flex-direction: column;
-        display: none;
+        background-color: var(--colorDarkThree);
+        opacity: 0.9;
+        width: 100%;
+        text-align: center;
+        transition: 0.5s;
     }
-    
+
+    .navItem {
+        margin: 16px 0;
+    }
+
+    .navLink {
+        margin: 0;
+    }
+
+    .navMenu.active {
+        left: 0;
+    }
 }
 
 .secInicio {
