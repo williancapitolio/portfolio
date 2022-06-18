@@ -3,7 +3,7 @@
 var nav = document.querySelector('nav');
 
 window.addEventListener('scroll', () => {
-    this.window.pageYOffset > 56
+    this.window.pageYOffset > 60
         ? nav.classList.add('bg-dark', 'shadow')
         : nav.classList.remove('bg-dark', 'shadow');
 });
@@ -21,9 +21,11 @@ hamburgerMenu.addEventListener("click", () => {
 
     navMenu.classList.toggle("active");
 
-    navMenu.classList.contains("active")
-        ? nav.classList.add('bg-dark', 'shadow')
-        : nav.classList.remove('bg-dark', 'shadow');
+    if (navMenu.classList.contains("active")) {
+        nav.classList.add('bg-dark', 'shadow');
+    } else if (this.window.pageYOffset < 60) {
+        nav.classList.remove('bg-dark', 'shadow');
+    };
 
     body.classList.toggle("menuNavActive");
 
