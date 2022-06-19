@@ -25,13 +25,17 @@ body {
     background-color: var(--colorBg);
 }
 
+.header .navbar {
+    transition: all 0.3s ease;
+}
+
 .header .navbar a {
     text-decoration: none;
     color: var(--fontColorOne);
     text-shadow: 4px 4px 10px var(--colorDarkOne);
 }
 
-.navMenu{
+.navMenu {
     flex-direction: row;
 }
 
@@ -65,7 +69,7 @@ body {
         gap: 0;
         flex-direction: column;
         background-color: var(--colorDarkThree);
-        opacity: 0.9;
+        opacity: 0.95;
         width: 100%;
         text-align: center;
         transition: 0.5s;
@@ -134,7 +138,7 @@ body {
     .secInicio div h1 {
         font-size: 2.5em;
     }
-    
+
     .secInicio div h2 {
         font-size: 1.5em;
     }
@@ -143,18 +147,83 @@ body {
 h3 {
     font-size: 1.25em;
     text-decoration: underline;
+    font-weight: 700;
+}
 
+h4 {
+    font-size: 1.125em;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 1.125em;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 1em;
+    font-weight: 500;
 }
 
 .secSobre {
     margin-top: 2em;
 }
 
-.secPortfolio {
-    margin-top: 4em;
+.sobreContent {
+    margin-top: 2em;
 }
 
 .secCurriculo {
+    margin-top: 4em;
+}
+
+.curriculoContent {
+    margin-top: 2em;
+}
+
+.curriculoContent span {
+    font-size: 1em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.curriculoContent p {
+    margin: 0;
+    margin-top: 0.5em;
+}
+
+.curriculoTitle h4 {
+    margin-bottom: 1em;
+}
+
+.curriculoItem {
+    border-left: 2px solid var(--colorOne);
+    position: relative;
+    padding-left: 2em;
+    padding-bottom: 2em;
+}
+
+.curriculoItem::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--colorOne);
+    background: var(--colorBg);
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .curriculoTitle:nth-child(2) {
+        margin-top: 2em;
+    }
+}
+
+.secPortfolio {
     margin-top: 4em;
 }
 
