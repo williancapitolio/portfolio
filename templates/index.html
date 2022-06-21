@@ -123,7 +123,7 @@
         <section class="secPortfolio container" id="secPortfolio">
             <h3>Portfólio</h3>
             <div class="row carouselInicio">
-                <div id="banner" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div id="banner" class="carousel slide" data-bs-ride="carousel">
 
                     <div id="indicadoresBanner" class="carousel-indicators">
                         <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active"></button>
@@ -135,24 +135,27 @@
                         <div class="carousel-item active">
                             <div class="row row-cols-1 row-cols-md-3 g-4">
                                 <div class="col">
-                                    <div class="card" style="width: 18rem;">
+                                    <div class="card">
                                         <img src="../static/img/portfolio-1-prodacs.png" class="card-img-top"
                                             alt="Print do ProdACS">
                                         <div class="card-body">
                                             <h5 class="card-title">ProdACS</h5>
                                             <p class="card-text">Projeto fullstack desenvolvido para o meu TC, criado
-                                                com PHP, Bootstrap, JS, DataTables, FullCalendar, Google Maps API e MySQL. Descontinuado.</p>
+                                                com PHP, Bootstrap, JS, DataTables, FullCalendar, Google Maps API e
+                                                MySQL. Descontinuado.</p>
                                             <div class="d-flex justify-content-center">
                                                 <a href="https://github.com/williancapitolio/prodacs" target='_blank'
-                                                    class="btn btn-dark me-3"><i class="bi bi-github"></i></a>
-                                                <a href="#" target='_blank' class="btn btn-primary"><i
+                                                    class="btn btn-dark me-3" role="button"><i
+                                                        class="bi bi-github"></i></a>
+                                                <a href="#" target='_blank' class="btn btn-primary disabled"
+                                                    role="button" aria-disabled="true"><i
                                                         class="bi bi-link-45deg"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div class="card" style="width: 18rem;">
+                                    <div class="card">
                                         <img src="../static/img/portfolio-2-lords.png" class="card-img-top"
                                             alt="Print da Lord's Personal Studio">
                                         <div class="card-body">
@@ -161,16 +164,17 @@
                                                 Lord's Personal Studio, criado com HTML, CSS, Bootstrap e JS.</p>
                                             <div class="d-flex justify-content-center">
                                                 <a href="https://github.com/williancapitolio/lordspersonalstudio"
-                                                    target='_blank' class="btn btn-dark me-3"><i
+                                                    target='_blank' class="btn btn-dark me-3" role="button"><i
                                                         class="bi bi-github"></i></a>
-                                                <a href="#" target='_blank' class="btn btn-primary"><i
+                                                <a href="#" target='_blank' class="btn btn-primary disabled"
+                                                    role="button" aria-disabled="true"><i
                                                         class="bi bi-link-45deg"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div class="card" style="width: 18rem;">
+                                    <div class="card">
                                         <img src="../static/img/portfolio-3-giro.png" class="card-img-top"
                                             alt="Print da Giro Capitólio">
                                         <div class="card-body">
@@ -179,9 +183,10 @@
                                                 Turismo Giro Capitólio, criado com HTML, CSS, Bootstrap e JS.</p>
                                             <div class="d-flex justify-content-center">
                                                 <a href="https://github.com/williancapitolio/girocapitolio"
-                                                    target='_blank' class="btn btn-dark me-3"><i
+                                                    target='_blank' class="btn btn-dark me-3" role="button"><i
                                                         class="bi bi-github"></i></a>
-                                                <a href="#" target='_blank' class="btn btn-primary"><i
+                                                <a href="#" target='_blank' class="btn btn-primary disabled"
+                                                    role="button" aria-disabled="true"><i
                                                         class="bi bi-link-45deg"></i></a>
                                             </div>
                                         </div>
@@ -193,41 +198,56 @@
                         <div class="carousel-item">
                             <div class="row row-cols-1 row-cols-md-3 g-4">
                                 <div class="col">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="../static/img/portfolio-2-lords.png" class="card-img-top" alt="...">
+                                    <div class="card">
+                                        <img src="../static/img/portfolio-not-found.png" class="card-img-top"
+                                            alt="Novo projeto aqui em breve">
                                         <div class="card-body">
-                                            <h5 class="card-title">Lord's Personal Studio</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make
-                                                up
-                                                the bulk of the card's content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            <h5 class="card-title">Em breve</h5>
+                                            <p class="card-text">Seja paciente e aguarde um momento, pois eu estou
+                                                desenvolvendo um novo projeto para ficar aqui!</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a href="#" target='_blank' class="btn btn-dark me-3 disabled"
+                                                    role="button" aria-disabled="true"><i class="bi bi-github"></i></a>
+                                                <a href="#" target='_blank' class="btn btn-primary disabled"
+                                                    role="button" aria-disabled="true"><i
+                                                        class="bi bi-link-45deg"></i></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="../static/img/portfolio-2-lords.png" class="card-img-top" alt="...">
+                                    <div class="card">
+                                        <img src="../static/img/portfolio-not-found.png" class="card-img-top"
+                                            alt="Novo projeto aqui em breve">
                                         <div class="card-body">
-                                            <h5 class="card-title">Lord's Personal Studio</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make
-                                                up
-                                                the bulk of the card's content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            <h5 class="card-title">Em breve</h5>
+                                            <p class="card-text">Seja paciente e aguarde um momento, pois eu estou
+                                                desenvolvendo um novo projeto para ficar aqui!</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a href="#" target='_blank' class="btn btn-dark me-3 disabled"
+                                                    role="button" aria-disabled="true"><i class="bi bi-github"></i></a>
+                                                <a href="#" target='_blank' class="btn btn-primary disabled"
+                                                    role="button" aria-disabled="true"><i
+                                                        class="bi bi-link-45deg"></i></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="../static/img/portfolio-2-lords.png" class="card-img-top" alt="...">
+                                    <div class="card">
+                                        <img src="../static/img/portfolio-not-found.png" class="card-img-top"
+                                            alt="Novo projeto aqui em breve">
                                         <div class="card-body">
-                                            <h5 class="card-title">Lord's Personal Studio</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make
-                                                up
-                                                the bulk of the card's content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            <h5 class="card-title">Em breve</h5>
+                                            <p class="card-text">Seja paciente e aguarde um momento, pois eu estou
+                                                desenvolvendo um novo projeto para ficar aqui!</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a href="#" target='_blank' class="btn btn-dark me-3 disabled"
+                                                    role="button" aria-disabled="true"><i class="bi bi-github"></i></a>
+                                                <a href="#" target='_blank' class="btn btn-primary disabled"
+                                                    role="button" aria-disabled="true"><i
+                                                        class="bi bi-link-45deg"></i></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -240,10 +240,20 @@ h6 {
     margin-top: 2em;
 }
 
+/*
+.carouselInicio .card {
+    height: 450px;
+}
+*/
+
 .carouselInicio .card h5,
 .carouselInicio .card p,
 .carouselInicio .card a{
     color: var(--colorBg);
+}
+
+.carouselInicio .controlesBanner {
+    margin-top: 3em;
 }
 
 .secContato {
