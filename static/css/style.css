@@ -1,5 +1,5 @@
 :root {
-    --colorOne: #0b0979;
+    --colorOne: #0d6efd;
     --colorTwo: #FAFAFA;
     --colorThree: #535353;
 
@@ -234,6 +234,16 @@ h6 {
 
 .secPortfolio {
     margin-top: 4em;
+}
+
+.carouselInicio {
+    margin-top: 2em;
+}
+
+.carouselInicio .card h5,
+.carouselInicio .card p,
+.carouselInicio .card a{
+    color: var(--colorBg);
 }
 
 .secContato {
