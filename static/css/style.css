@@ -299,4 +299,14 @@ h6 {
     background-color: var(--colorDarkThree);
     text-align: center;
     justify-content: center;
+    padding: 1em 0;
+}
+
+.footerTop {
+    margin-bottom: 2em;
+}
+
+.footerBottom strong{
+    color: var(--colorOne);
+    margin-top: 2em;
 }
