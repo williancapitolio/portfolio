@@ -21,6 +21,22 @@
     color: var(--fontColorOne);
 }
 
+/*
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    width: 12px;
+    box-shadow: inset 0 0 .3em #00000050;
+    background-color: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--colorOne);
+}
+*/
+
 body {
     background-color: var(--colorBg);
 }
@@ -155,8 +171,19 @@ body {
 
 h3 {
     font-size: 1.25em;
-    text-decoration: underline;
     font-weight: 700;
+    padding-top: .5em;
+    position: relative;
+}
+
+h3:before {
+    width: 1.5em;
+    border-top: .20em solid var(--colorOne);
+    content: "";
+    position: absolute;
+    bottom: 2em;
+    align-items: center;
+    justify-content: center;
 }
 
 h4 {
@@ -180,6 +207,13 @@ h6 {
 
 .sobreContent {
     margin-top: 2em;
+}
+
+.secSobre .sobreAtt {
+    margin: 2em 0 0 0;
+    font-size: 1em;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .secCurriculo {
