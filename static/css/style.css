@@ -301,6 +301,9 @@ h6 {
     border-radius: 50%;
 }
 
+.curriculoBaixar {
+}
+
 @media (max-width: 768px) {
     .curriculoTitle:nth-child(2) {
         margin-top: 2em;
