@@ -1,4 +1,3 @@
-import smtplib
 from distutils.log import debug
 from flask import Flask, render_template, redirect, request, flash
 from flask_mail import Mail, Message
