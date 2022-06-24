@@ -73,8 +73,7 @@
             <div class="row sobreContent">
                 <p>Meu nome é Willian Pereira da Silva, sou formado em Sistemas de Informação pela Universidade do
                     Estado de
-                    Minas Gerais (UEMG) - Campus Passos e atualmente sou Servidor Público pela Prefeitura Municipal de
-                    Capitólio, lotado na Secretaria de Saúde, trabalhando como Agente Comunitário de Saúde.</p>
+                    Minas Gerais (UEMG) - Campus Passos.</p>
                 <p>Recém formado, busco estudar sobre desenvolvimento web. Pretendo ser programador web fullstack. Essas
                     são algumas skills que eu almejo ou já utilizei:</p>
                 <div class="row">
@@ -139,7 +138,7 @@
             </div>
         </section>
         <section class="secCurriculo container" id="secCurriculo">
-            <h3>Curriculo</h3>
+            <h3>Currículo</h3>
             <div class="row curriculoContent">
                 <div class="col-12 col-md-6 curriculoTitle">
                     <h4>Educação</h4>
@@ -179,11 +178,13 @@
                         </p>
                     </div>
                 </div>
+                <!--
                 <div class="col mt-4 curriculoBaixar">
                     <p class="mb-2">Ficou alguma dúvida? Clique no botão abaixo e vizualize meu currículo completo!</p>
                     <a href="#" target='_blank' class="btn btn-primary me-3"
                         role="button"><i class="bi bi-file-image"></i> Vizualizar Currículo</a>
                 </div>
+                -->
             </div>
         </section>
         <section class="secPortfolio container" id="secPortfolio">
@@ -340,6 +341,58 @@
 
         <section class="secContato container" id="secContato">
             <h3>Contato</h3>
+            <div class="row mt-4">
+                <div class="col-md-5">
+                    <div class="card p-4 border-0 cardContato">
+                        <div class="enderecoContato">
+                            <h4><i class="bi bi-geo-alt"></i> Localização:</h4>
+                            <p>Capitólio, MG</p>
+                        </div>
+                        <div class="emailContato">
+                            <h4><i class="bi bi-envelope"></i> E-mail:</h4>
+                            <p>contato.williancapitolio@gmail.com</p>
+                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d933.584758542209!2d-46.044133770830356!3d-20.615033143908736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b43d24247b25f7%3A0x405de4e02e5d6e09!2sR.%20Jos%C3%A9%20Soares%20Leite%2C%20347-327%2C%20Capit%C3%B3lio%20-%20MG%2C%2037930-000!5e0!3m2!1spt-BR!2sbr!4v1656032414760!5m2!1spt-BR!2sbr"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-7 mt-5 mt-md-0 cardMensagem">
+                    <div class="card p-4 h-100 border-0">
+                        <form class="row g-3" action='/send' method="POST">
+                            <div class="col-md-6">
+                                <label for="nome" class="form-label">Nome:</label>
+                                <input type="text" class="form-control" id="nome" name='nome'
+                                    placeholder='Digite seu nome' required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">E-mail:</label>
+                                <input type="email" class="form-control" id="email" name='email'
+                                    placeholder='Digite seu e-mail' required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="mensagem" class="form-label">Mensagem:</label>
+                                <textarea type="text" class="form-control" id="mensagem" name='mensagem' rows="10"
+                                    placeholder="Digite sua mensagem" required></textarea>
+                            </div>
+
+
+                            <div class="col-12 d-flex justify-content-center mt-4">
+                                <button id='btn-enviar' type="submit" class="btn btn-primary">Enviar
+                                    mensagem</button>
+
+                                <!--<button id='btn-enviar-loader' class="btn btn-primary" type="button" disabled>
+                                    <span class="spinner-border spinner-border-sm" role="status"
+                                        aria-hidden="true"></span>
+                                    Enviando...
+                                </button>-->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">

@@ -330,7 +330,27 @@ h6 {
 
 .secContato {
     margin-top: 4em;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
+}
+
+.cardContato .enderecoContato h4,
+.cardContato .enderecoContato i,
+.cardContato .enderecoContato p {
+    color: var(--colorBg);
+}
+
+.cardContato .emailContato h4,
+.cardContato .emailContato i,
+.cardContato .emailContato p {
+    color: var(--colorBg);
+}
+
+.cardContato iframe {
+    width: 100%;
+}
+
+.cardMensagem label {
+    color: var(--colorBg);
 }
 
 .footer {
@@ -342,6 +362,7 @@ h6 {
 
 .footerTop {
     margin-bottom: 2em;
+    margin-top: .5em;
 }
 
 .footerBottom strong {
