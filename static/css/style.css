@@ -246,12 +246,16 @@ h6 {
     margin-top: 2em;
 }
 
-.sobreContent {
+.secSobre .sobreContent {
+    margin-top: 2em;
+}
+
+.secSobre .sobreHabilidades {
     margin-top: 2em;
 }
 
 .secSobre .sobreAtt {
-    margin: 2em 0 0 0;
+    margin-top: 2em;
     font-size: 1em;
     font-weight: 400;
     font-style: italic;

@@ -1,10 +1,10 @@
 from distutils.log import debug
 from flask import Flask, render_template, redirect, request, flash
 from flask_mail import Mail, Message
-from config import email, GmailAPPPassword
+from config import secretKey, email, GmailAPPPassword
 
 app = Flask(__name__)
-app.secret_key = 'landingpagewill'
+app.secret_key = secretKey
 
 mail_settings = {
     "MAIL_SERVER": 'smtp.gmail.com',
@@ -42,14 +42,14 @@ def send ():
             recipients = [app.config.get("MAIL_USERNAME")],
             body = f'''
 
-            {formContato.nome} com o e-mail {formContato.email}, te enviou a seguinte mensagem:
+            {formContato.nome}, com o e-mail {formContato.email} te enviou a seguinte mensagem:
 
             {formContato.mensagem}
 
             '''
         )
         mail.send(msg)
-        flash('Mensagem enviada com sucesso!')
+        flash(' Mensagem enviada com sucesso!')
     return redirect('/')
 
 if __name__ == '__main__':
