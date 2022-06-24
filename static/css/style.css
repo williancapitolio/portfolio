@@ -355,6 +355,17 @@ h6 {
     color: var(--colorBg);
 }
 
+.btnEnviarMsg {
+    display: none;
+}
+
+.msgAlerta {
+    position: fixed;
+    z-index: 10;
+    top: 75px;
+    right: 30px;
+  } 
+
 .footer {
     background-color: var(--colorDarkThree);
     text-align: center;

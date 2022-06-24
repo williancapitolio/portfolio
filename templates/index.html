@@ -383,17 +383,28 @@
                                 <button id='btn-enviar' type="submit" class="btn btn-primary">Enviar
                                     mensagem</button>
 
-                                <!--<button id='btn-enviar-loader' class="btn btn-primary" type="button" disabled>
+                                <button id='btn-enviar-loader' class="btn btn-primary btnEnviarMsg" type="button"
+                                    disabled>
                                     <span class="spinner-border spinner-border-sm" role="status"
                                         aria-hidden="true"></span>
                                     Enviando...
-                                </button>-->
+                                </button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div id="alerta" class="alert alert-success alert-dismissible fade show msgAlerta" role="alert">
+            <i class="bi bi-check-circle-fill"></i> {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
     </main>
     <footer class="footer">
         <div class="container footerTop">

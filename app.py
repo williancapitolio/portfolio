@@ -1,4 +1,3 @@
-from crypt import methods
 from distutils.log import debug
 from flask import Flask, render_template, redirect, request, flash
 from flask_mail import Mail, Message
@@ -21,8 +20,8 @@ mail = Mail(app)
 
 class Contato:
     def __init__(self, nome, email, mensagem):
-        self.nome = nome,
-        self.senha = senha,
+        self.nome = nome
+        self.email = email
         self.mensagem = mensagem
 
 @app.route('/')
@@ -46,7 +45,7 @@ def send ():
             {formContato.nome} com o e-mail {formContato.email}, te enviou a seguinte mensagem:
 
             {formContato.mensagem}
-            
+
             '''
         )
         mail.send(msg)
