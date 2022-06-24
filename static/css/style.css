@@ -355,7 +355,8 @@ h6 {
     width: 100%;
 }
 
-.cardMensagem label {
+.cardMensagem label,
+.cardMensagem h4 {
     color: var(--colorBg);
 }
 
@@ -363,7 +364,7 @@ h6 {
     display: none;
 }
 
-.msgAlerta {
+#alerta {
     position: fixed;
     z-index: 10;
     top: 70px;

@@ -349,7 +349,6 @@
             </div>
 
         </section>
-
         <section class="secContato container" id="secContato">
             <h3>Contato</h3>
             <div class="row mt-4">
@@ -371,6 +370,7 @@
                 </div>
                 <div class="col-md-7 mt-5 mt-md-0 cardMensagem">
                     <div class="card p-4 h-100 border-0">
+                        <h4 class="mb-3">Me envie uma mensagem!</h4>
                         <form class="row g-3" action='/send' method="POST">
                             <div class="col-md-6">
                                 <label for="nome" class="form-label">Nome:</label>
@@ -385,7 +385,7 @@
 
                             <div class="col-12">
                                 <label for="mensagem" class="form-label">Mensagem:</label>
-                                <textarea type="text" class="form-control" id="mensagem" name='mensagem' rows="10"
+                                <textarea type="text" class="form-control" id="mensagem" name='mensagem' rows="8"
                                     placeholder="Digite sua mensagem" required></textarea>
                             </div>
 
@@ -409,7 +409,7 @@
         {% with messages = get_flashed_messages() %}
         {% if messages %}
         {% for message in messages %}
-        <div id="alerta" class="alert alert-success alert-dismissible fade show msgAlerta" role="alert">
+        <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
             <i class="bi bi-check-circle-fill"></i> {{ message }}
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
@@ -423,8 +423,6 @@
                     class="bi bi-github"></i></a>
             <a href="https://www.instagram.com/williancapitolio" target='_blank' class="btn btn-primary me-3"
                 role="button"><i class="bi bi-instagram"></i></a>
-            <a href="mailto:contato.williancapitolio@gmail.com" target='_blank' class="btn btn-primary me-3"
-                role="button"><i class="bi bi-envelope"></i></a>
         </div>
         <div class="container footerBottom">Copyright &copy; 2022 <strong>williancapitolio</strong></div>
     </footer>
