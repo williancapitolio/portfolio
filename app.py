@@ -1,7 +1,8 @@
+import smtplib
 from distutils.log import debug
 from flask import Flask, render_template, redirect, request, flash
 from flask_mail import Mail, Message
-from config import email, senha
+from config import email, GmailAPPPassword
 
 app = Flask(__name__)
 app.secret_key = 'landingpagewill'
@@ -12,7 +13,7 @@ mail_settings = {
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
     "MAIL_USERNAME": email,
-    "MAIL_PASSWORD": senha
+    "MAIL_PASSWORD": GmailAPPPassword
 }
 
 app.config.update(mail_settings)
