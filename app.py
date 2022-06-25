@@ -1,18 +1,20 @@
 from distutils.log import debug
 from flask import Flask, render_template, redirect, request, flash
 from flask_mail import Mail, Message
-from config import secretKey, email, GmailAPPPassword
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
 app = Flask(__name__)
-app.secret_key = secretKey
+app.secret_key = os.getenv("SECRETKEY")
 
 mail_settings = {
     "MAIL_SERVER": 'smtp.gmail.com',
     "MAIL_PORT": 465,
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
-    "MAIL_USERNAME": email,
-    "MAIL_PASSWORD": GmailAPPPassword
+    "MAIL_USERNAME": os.getenv("EMAIL"),
+    "MAIL_PASSWORD": os.getenv("SENHA")
 }
 
 app.config.update(mail_settings)
