@@ -123,8 +123,12 @@ btnEnviar.addEventListener("click", () => {
 
 //////////////////////////////////////////////////
 
+const alertaMsg = document.querySelector('#alerta');
+
 setTimeout(() => {
-    document.querySelector('#alerta').style.display = 'none';
+    if (alertaMsg != null) {
+        alertaMsg.style.display = 'none';
+    }
 }, 3000)
 
 //////////////////////////////////////////////////
